@@ -7,6 +7,8 @@ import "fmt"
 	entre el mismo y el 0
 */
 
+// FORMA RECURSIVA: O(n)
+
 func imprimirNumeros(n int) {
 	// Caso base: cuando n es 0, se imprime y se termina la recursión
 	fmt.Println(n)
@@ -31,3 +33,17 @@ func main() {
 
 	imprimirNumeros(num) // Llamar a la función imprimirNumeros con el número ingresado por el usuario
 }
+
+/*
+FORMA ITERATIVA: O(n)
+
+func main() {
+	var num int
+	fmt.Print("Ingrese un número entero: ")
+	fmt.Scan(&num)
+
+	for i := num; i >= 0; i-- {
+		fmt.Println(i)
+	}
+}
+*/

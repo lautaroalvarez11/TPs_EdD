@@ -37,3 +37,29 @@ func main() {
 	// Mostrar el resultado
 	fmt.Println("La suma de los números entre los parámetros es: ", suma)
 }
+
+/*
+FORMA ITERATIVA: O(n)
+
+func main() {
+	var inicio, fin int
+
+	fmt.Print("Ingrese el número de inicio: ")
+	fmt.Scan(&inicio)
+	fmt.Print("Ingrese el número de fin: ")
+	fmt.Scan(&fin)
+
+	suma := 0
+
+	if inicio < fin {
+		for i:= inicio + 1; i < fin; i++ {
+			suma += i
+		}
+	} else {
+		for i:= inicio - 1; i > fin; i-- {
+			suma += i
+		}
+	}
+	fmt.Println("La suma de los números entre los parámetros es: ", suma)
+}
+*/

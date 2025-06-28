@@ -7,6 +7,8 @@ import "fmt"
 	de inicio y uno de fin
 */
 
+// FORMA RECURSIVA: O(n)
+
 func sumarEntre(inicio, fin int) int {
 	// Caso base: Si son iguales no hay números entre sí
 	if inicio == fin {

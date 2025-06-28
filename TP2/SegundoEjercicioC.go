@@ -46,3 +46,34 @@ func main() {
 	fmt.Println("Cantidad de vocales:", vocales)
 	fmt.Println("Cantidad de consonantes:", consonantes)
 }
+
+/*
+FORMA ITERATIVA: O(n)
+
+func main() {
+	var texto string
+
+	fmt.Println("Ingrese una cadena de texto: ")
+	fmt.Scanln(&texto)
+
+	vocales := 0
+	consonantes := 0
+
+	// Convertir todo a minúscula para simplificar la comparación
+	texto = strings.ToLower(texto)
+
+	for i := 0; i < len(texto); i++ {
+		char := rune(texto[i]) // Convertir byte a rune para usar unicode.IsLetter
+		if unicode.IsLetter(char) {
+			if char == 'a' || char == 'e' || char == 'i' || char == 'o' || char == 'u' {
+				vocales++
+			} else {
+				consonantes++
+			}
+		}
+	}
+
+	fmt.Println("Cantidad de vocales:", vocales)
+	fmt.Println("Cantidad de consonantes:", consonantes)
+}
+*/

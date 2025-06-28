@@ -43,3 +43,32 @@ func main() {
 
 	fmt.Println("El mayor elemento del arreglo es:", mayor)
 }
+
+/*
+Forma Iterativa: O(n)
+
+func main() {
+	var n int
+
+	fmt.Print("¿Cuántos elementos tendrá el arreglo?: ")
+	fmt.Scan(&n)
+
+	arreglo := make([]int, n)
+
+	fmt.Println("Ingrese los elementos del arreglo:")
+	for i := 0; i < n; i++ {
+		fmt.Printf("Elemento %d: ", i+1)
+		fmt.Scan(&arr[i])
+	}
+
+	mayor := arreglo[0]
+
+	for i := 1; i < n; i++ {
+		if arreglo[i] > mayor {
+			mayor = arreglo[i]
+		}
+	}
+
+	fmt.Println("El mayor elemento del arreglo es:", mayor)
+}
+*/
